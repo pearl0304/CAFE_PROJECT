@@ -7,11 +7,42 @@ export const HeaderWrapper = styled.header`
   display: flex;
   justify-content: center;
   line-height: 4.5rem;
+  color: #31302f;
 
   .header-container {
-    width: 80%;
-    background-color: azure;
+    width: 90%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+  }
+
+  .header-left {
+    width: 25rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header-left .nav > ul {
+    display: flex;
+    gap: 1rem;
+  }
+  .header-left .nav > ul li {
+    cursor: pointer;
+  }
+
+  .header-right {
+    width: 15rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    cursor: pointer;
+  }
+
+  .header-right .login {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .header-right .header-icon {
+    margin-top: 6px;
   }
 `;

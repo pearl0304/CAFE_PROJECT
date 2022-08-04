@@ -1,5 +1,7 @@
 import React from "react";
 import { HeaderWrapper } from "../css/Header.styled";
+import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+import LocalMallIcon from "@mui/icons-material/LocalMall";
 
 export const Header = () => {
   return (
@@ -17,11 +19,15 @@ export const Header = () => {
         </div>
         <div className="header-right">
           <div className="login">
-            <img></img>
-            <span>LogIn</span>
+            <div className="header-icon">
+              <AccountCircleIcon />
+            </div>
+            <div>
+              <span>LogIn</span>
+            </div>
           </div>
-          <div className="cart">
-            <img></img>
+          <div className="header-icon">
+            <LocalMallIcon />
           </div>
         </div>
       </div>
