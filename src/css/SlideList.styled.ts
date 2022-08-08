@@ -8,6 +8,9 @@ export const SlideListWrapper = styled.div`
     width: 90%;
     display: flex;
     position: relative;
+    color: #31302f;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    letter-spacing: 0.2rem;
   }
   .menu-left {
     width: 70%;
@@ -19,12 +22,13 @@ export const SlideListWrapper = styled.div`
   }
 
   .menu-left > div:first-child {
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
     font-size: 4rem;
     font-weight: bold;
   }
 
   .menu-left .carousel {
+    width: 90%;
+    height: 90%;
   }
 
   .menu-left .slide-img {
@@ -34,9 +38,8 @@ export const SlideListWrapper = styled.div`
 
   .menu-right {
     position: absolute;
-    right: -4rem;
-    bottom: -2rem;
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    right: 2rem;
+    bottom: 4rem;
     font-size: 5rem;
     font-weight: bold;
   }
