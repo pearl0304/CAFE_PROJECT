@@ -2,11 +2,11 @@ import styled from "styled-components";
 
 export const SlideListWrapper = styled.div`
   background-color: #f8eee1;
-  height: 50rem;
 
   .menu-container {
     width: 90%;
     display: flex;
+    justify-content: center;
     position: relative;
     color: #31302f;
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
@@ -19,6 +19,7 @@ export const SlideListWrapper = styled.div`
     gap: 2rem;
     margin-left: 5rem;
     margin-top: 4rem;
+    margin-bottom: 5rem;
   }
 
   .menu-left > div:first-child {

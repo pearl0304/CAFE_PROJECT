@@ -1,4 +1,6 @@
 import React from "react";
+import { MenuList } from "./MenuList";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import { NewsWrapper } from "../css/News.styled";
 import news_01 from "../asserts/news_01.jpg";
 import news_02 from "../asserts/news_02.jpg";
@@ -18,7 +20,7 @@ export const News = () => {
             <span>PROMOTION</span>
           </div>
           <div>
-            <span>it so hot </span>
+            <span> See more new Menu → </span>
           </div>
         </div>
         <div className="news-right">

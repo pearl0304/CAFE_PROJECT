@@ -25,7 +25,7 @@ export const SlideList = () => {
       <div className="menu-container">
         <div className="menu-left">
           <div>
-            <span>New Menu</span>
+            <span>HOT Menu</span>
           </div>
           <div className="carousel">
             <Slider {...setting}>

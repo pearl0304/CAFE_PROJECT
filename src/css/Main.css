@@ -16,3 +16,7 @@ input {
 ::-webkit-scrollbar {
   display: none;
 }
+
+.slick-slider {
+  height: 90%;
+}
