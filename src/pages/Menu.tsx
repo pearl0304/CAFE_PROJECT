@@ -1,6 +1,7 @@
 import { Header } from "../Components/Header";
 import { MenuList } from "../Components/MenuList";
 import { NavInterface } from "../interfaces/menu.interface";
+import { MenuListData } from "../database/menuListData";
 
 export const Menu = () => {
   const menuNav: NavInterface[] = [
@@ -12,7 +13,7 @@ export const Menu = () => {
   return (
     <>
       <Header nav={menuNav} />
-      <MenuList />
+      <MenuList menuList={MenuListData} />
     </>
   );
 };

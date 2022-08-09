@@ -1,5 +1,5 @@
 import AppleManGo from "../asserts/drinks/Apple-mango-Bingsu.png";
-import BlueHawail from "../asserts/drinks/Blue-BlueHawail.png";
+import BlueHawail from "../asserts/drinks/Blue-Hawaii.png";
 import DdangmobanJuice from "../asserts/drinks/Ddangmoban-juice.png";
 import HoneyGrapefruitBingsu from "../asserts/drinks/Honey-grapefruit-Bingsu.png";
 import OceanEinspanner from "../asserts/drinks/Ocean-Einspanner.png";
@@ -17,6 +17,7 @@ export const MenuListData = [
     nutrients: "나트륨 122mg, 당류 9g, 포화지방 12g, 단백질 6g, 카페인 125mg",
     type: "ICE",
     price: 5500,
+    category: "season",
   },
   {
     id: "drink-02",
@@ -27,6 +28,7 @@ export const MenuListData = [
     nutrients: "나트륨 11mg, 당류 30g, 포화지방 0g, 단백질 1g, 카페인 0mg",
     type: "ICE",
     price: 5000,
+    category: "season",
   },
   {
     id: "drink-03",
@@ -37,6 +39,7 @@ export const MenuListData = [
     nutrients: "나트륨 1mg, 당류 36g, 포화지방 0g, 단백질 2g, 카페인 0mg",
     type: "ICE",
     price: 6000,
+    category: "signature",
   },
   {
     id: "drink-04",
@@ -47,6 +50,7 @@ export const MenuListData = [
     nutrients: "나트륨 24mg, 당류 39g, 포화지방 0g, 단백질 1g, 카페인 0mg",
     type: "ICE",
     price: 5500,
+    category: "signature",
   },
   {
     id: "shavedIce-01",
@@ -57,6 +61,7 @@ export const MenuListData = [
     nutrients: "나트륨 189mg, 당류 62.5g, 포화지방 7g, 단백질 17.4g",
     type: "ICE",
     price: 7000,
+    category: "season",
   },
 
   {
@@ -68,6 +73,7 @@ export const MenuListData = [
     nutrients: "나트륨 109mg, 당류 53g, 포화지방 5g, 단백질 7g",
     type: "ICE",
     price: 8000,
+    category: "season",
   },
   {
     id: "shavedIce-03",
@@ -78,6 +84,7 @@ export const MenuListData = [
     nutrients: "나트륨 194.8mg, 당류 54.2g, 포화지방 20.6g, 단백질 142g",
     type: "ICE",
     price: 9000,
+    category: "season",
   },
   {
     id: "shavedIce-04",
@@ -88,5 +95,6 @@ export const MenuListData = [
     nutrients: "나트륨 51.2mg, 당류 51.2g, 포화지방 1.7g, 단백질 2.2g",
     type: "ICE",
     price: 9500,
+    category: "season",
   },
 ];

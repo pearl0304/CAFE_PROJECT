@@ -29,7 +29,7 @@ export const HeaderWrapper = styled.header`
     display: flex;
     gap: 1rem;
   }
-  .header-left .nav > ul li {
+  .header-left .nav > ul > a {
     cursor: pointer;
   }
 

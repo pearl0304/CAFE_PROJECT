@@ -6,7 +6,7 @@ import { NavInterface } from "../interfaces/menu.interface";
 
 export const Home = () => {
   const homeNav: NavInterface[] = [
-    { to: "hoem", title: "HOME" },
+    { to: "home", title: "HOME" },
     { to: "promotion", title: "PROMOTION" },
     { to: "story", title: "STORY" },
   ];

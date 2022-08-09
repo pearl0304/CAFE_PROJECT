@@ -7,6 +7,7 @@ export interface MenuListInterface {
   nutrients: string;
   type: string;
   price: number;
+  category: string;
 }
 
 export interface CartListInterface {
