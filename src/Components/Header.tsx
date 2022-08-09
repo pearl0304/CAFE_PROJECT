@@ -1,34 +1,24 @@
-import React, { useState } from "react";
-import { Link as ScrollLink } from "react-scroll";
+import React, { FC } from "react";
+import { Link } from "react-router-dom";
+import { Nav } from "./Nav";
 import { HeaderWrapper } from "../css/Header.styled";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import LocalMallIcon from "@mui/icons-material/LocalMall";
+import { NavInterface } from "../interfaces/menu.interface";
 
-export const Header = () => {
+type Props = {
+  nav: NavInterface[];
+};
+export const Header: FC<Props> = ({ nav }) => {
   return (
     <HeaderWrapper>
       <div className="header-container">
         <div className="header-left">
-          <div className="logo">LOGO</div>
-          <nav className="nav">
-            <ul className="header-menu">
-              <li>
-                <ScrollLink to="home" spy={true} smooth={true}>
-                  HOME
-                </ScrollLink>
-              </li>
-              <li>
-                <ScrollLink to="promotion" spy={true} smooth={true}>
-                  PROMOTION
-                </ScrollLink>
-              </li>
-              <li>
-                <ScrollLink to="story" spy={true} smooth={true}>
-                  STORY
-                </ScrollLink>
-              </li>
-            </ul>
-          </nav>
+          <Link to="/">
+            <div className="logo">LOGO</div>
+          </Link>
+
+          <Nav nav={nav} />
         </div>
         <div className="header-right">
           <div className="login">

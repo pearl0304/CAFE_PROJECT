@@ -17,3 +17,8 @@ export interface CartListInterface {
   price: number;
   amount: number;
 }
+
+export interface NavInterface {
+  to: string;
+  title: string;
+}

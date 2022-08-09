@@ -1,6 +1,5 @@
 import React from "react";
-import { MenuList } from "./MenuList";
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { NewsWrapper } from "../css/News.styled";
 import news_01 from "../asserts/news_01.jpg";
 import news_02 from "../asserts/news_02.jpg";
@@ -19,9 +18,11 @@ export const News = () => {
             <span>SUMMER</span>
             <span>PROMOTION</span>
           </div>
-          <div>
-            <span> See more new Menu → </span>
-          </div>
+          <Link to="/menu" style={{ textDecoration: "none" }}>
+            <div>
+              <span> See more new Menu → </span>
+            </div>
+          </Link>
         </div>
         <div className="news-right">
           <div>
