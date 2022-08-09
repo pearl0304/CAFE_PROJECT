@@ -9,8 +9,6 @@ export const SlideListWrapper = styled.div`
     justify-content: center;
     position: relative;
     color: #31302f;
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-    letter-spacing: 0.2rem;
   }
   .menu-left {
     width: 60%;
@@ -43,5 +41,11 @@ export const SlideListWrapper = styled.div`
     bottom: 4rem;
     font-size: 5rem;
     font-weight: bold;
+  }
+
+  .letter {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
   }
 `;

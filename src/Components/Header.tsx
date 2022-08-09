@@ -14,7 +14,7 @@ export const Header: FC<Props> = ({ nav }) => {
     <HeaderWrapper>
       <div className="header-container">
         <div className="header-left">
-          <Link to="/">
+          <Link to="/" style={{ textDecoration: "none" }}>
             <div className="logo">LOGO</div>
           </Link>
 

@@ -27,15 +27,20 @@ export const MenuListWrapper = styled.div`
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
+    place-items: center;
   }
 
   .menu-list {
-    width: 60%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     gap: 1rem;
     text-align: center;
     padding-bottom: 2rem;
+  }
+
+  .menu-list:hover {
+    cursor: pointer;
   }
 
   .menu-image img {
@@ -46,5 +51,19 @@ export const MenuListWrapper = styled.div`
   .menu-name {
     font-size: 18px;
     font-weight: bold;
+  }
+
+  @media screen and (max-width: 1023px) {
+    .menu-list-box {
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 2px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .menu-list-box {
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 2px;
+    }
   }
 `;

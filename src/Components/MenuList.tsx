@@ -5,6 +5,19 @@ import { MenuListInterface } from "../interfaces/menu.interface";
 type Props = {
   menuList: MenuListInterface[];
 };
+
+const menu = (ele: MenuListInterface) => {
+  return (
+    <div className="menu-list">
+      <div className="menu-image">
+        <img src={ele.image} alt={ele.title}></img>
+      </div>
+      <div className="menu-name">
+        <span>{ele.title}</span>
+      </div>
+    </div>
+  );
+};
 export const MenuList: FC<Props> = ({ menuList }) => {
   return (
     <MenuListWrapper>
@@ -16,16 +29,7 @@ export const MenuList: FC<Props> = ({ menuList }) => {
           <div className="menu-list-box">
             {menuList
               .filter((item) => item.category === "season")
-              .map((ele) => (
-                <div className="menu-list">
-                  <div className="menu-image">
-                    <img src={ele.image} alt={ele.title}></img>
-                  </div>
-                  <div className="menu-name">
-                    <span>{ele.title}</span>
-                  </div>
-                </div>
-              ))}
+              .map((ele) => menu(ele))}
           </div>
         </div>
         <div className="menu-box" id="signature">
@@ -35,16 +39,7 @@ export const MenuList: FC<Props> = ({ menuList }) => {
           <div className="menu-list-box">
             {menuList
               .filter((item) => item.category === "signature")
-              .map((ele) => (
-                <div className="menu-list">
-                  <div className="menu-image">
-                    <img src={ele.image} alt={ele.title}></img>
-                  </div>
-                  <div className="menu-name">
-                    <span>{ele.title}</span>
-                  </div>
-                </div>
-              ))}
+              .map((ele) => menu(ele))}
           </div>
         </div>
       </div>

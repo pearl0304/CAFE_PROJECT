@@ -25,7 +25,7 @@ export const SlideList = () => {
       <div className="menu-container">
         <div className="menu-left">
           <div>
-            <span>HOT Menu</span>
+            <span className="letter">HOT Menu</span>
           </div>
           <div className="carousel">
             <Slider {...setting}>
@@ -38,7 +38,7 @@ export const SlideList = () => {
           </div>
         </div>
         <div className="menu-right">
-          <span>Enjoy Your Summer</span>
+          <span className="letter">Enjoy Your Summer</span>
         </div>
       </div>
     </SlideListWrapper>
