@@ -13,12 +13,12 @@ export const SlideListWrapper = styled.div`
     letter-spacing: 0.2rem;
   }
   .menu-left {
-    width: 70%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     gap: 2rem;
     margin-left: 5rem;
-    margin-top: 3rem;
+    margin-top: 4rem;
   }
 
   .menu-left > div:first-child {

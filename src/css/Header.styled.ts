@@ -8,6 +8,10 @@ export const HeaderWrapper = styled.header`
   justify-content: center;
   line-height: 4.5rem;
   color: #31302f;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
 
   .header-container {
     width: 90%;

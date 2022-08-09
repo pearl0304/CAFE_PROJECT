@@ -21,7 +21,7 @@ const setting = {
 
 export const SlideList = () => {
   return (
-    <SlideListWrapper>
+    <SlideListWrapper id="promotion">
       <div className="menu-container">
         <div className="menu-left">
           <div>
