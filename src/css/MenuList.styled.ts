@@ -23,34 +23,10 @@ export const MenuListWrapper = styled.div`
     padding-bottom: 2rem;
   }
   .menu-list-box {
-    align-items: center;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
     place-items: center;
-  }
-
-  .menu-list {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    text-align: center;
-    padding-bottom: 2rem;
-  }
-
-  .menu-list:hover {
-    cursor: pointer;
-  }
-
-  .menu-image img {
-    width: 100%;
-    height: 100%;
-  }
-
-  .menu-name {
-    font-size: 18px;
-    font-weight: bold;
   }
 
   @media screen and (max-width: 1023px) {
