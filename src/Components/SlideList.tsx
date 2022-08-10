@@ -21,8 +21,8 @@ const setting = {
 
 export const SlideList = () => {
   return (
-    <SlideListWrapper id="promotion">
-      <div className="menu-container">
+    <SlideListWrapper>
+      <div className="menu-container" id="promotion">
         <div className="menu-left">
           <div>
             <span className="letter">HOT Menu</span>

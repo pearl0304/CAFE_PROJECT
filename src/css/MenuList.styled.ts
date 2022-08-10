@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const MenuListWrapper = styled.div`
   .menu-container {
-    margin-top: 4.5rem;
+    margin-top: 6.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;

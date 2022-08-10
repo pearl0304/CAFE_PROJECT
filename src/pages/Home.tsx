@@ -1,3 +1,4 @@
+import { Nav } from "../Components/Nav";
 import { News } from "../Components/News";
 import { SlideList } from "../Components/SlideList";
 import { StoryList } from "../Components/StoryList";
@@ -11,6 +12,7 @@ export const Home = () => {
   ];
   return (
     <div>
+      <Nav nav={homeNav} />
       <News />
       <SlideList />
       <StoryList />

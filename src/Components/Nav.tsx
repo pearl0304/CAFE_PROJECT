@@ -1,5 +1,6 @@
 import { FC } from "react";
 import { Link as ScrollLink } from "react-scroll";
+import { NavWrapper } from "../css/Nav.styled";
 import { NavInterface } from "../interfaces/menu.interface";
 
 type Props = {
@@ -7,8 +8,8 @@ type Props = {
 };
 export const Nav: FC<Props> = ({ nav }) => {
   return (
-    <>
-      <nav className="nav">
+    <NavWrapper>
+      <div className="nav-container">
         <ul className="header-menu">
           {nav.map((item) => (
             <ScrollLink to={item.to} spy={true} smooth={true}>
@@ -16,7 +17,7 @@ export const Nav: FC<Props> = ({ nav }) => {
             </ScrollLink>
           ))}
         </ul>
-      </nav>
-    </>
+      </div>
+    </NavWrapper>
   );
 };

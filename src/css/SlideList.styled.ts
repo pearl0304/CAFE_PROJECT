@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const SlideListWrapper = styled.div`
+  width: 100%;
+  height: 50rem;
   background-color: #f8eee1;
 
   .menu-container {
@@ -9,6 +11,7 @@ export const SlideListWrapper = styled.div`
     justify-content: center;
     position: relative;
     color: #31302f;
+    padding-top: 5rem;
   }
   .menu-left {
     width: 60%;
