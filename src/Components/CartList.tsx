@@ -6,13 +6,22 @@ import Button from "@mui/material/Button";
 type Props = {
   cartItem: CartListInterface[];
   addToCart: (item: CartListInterface) => void;
+  removeFromCart: (id: string) => void;
 };
 
 const numberFormat = (price: number): string => {
   return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 };
 
-export const CartList: FC<Props> = ({ cartItem, addToCart }) => {
+export const CartList: FC<Props> = ({
+  cartItem,
+  addToCart,
+  removeFromCart,
+}) => {
+  const totalPrice = (items: CartListInterface[]) => {
+    return items.reduce((acc, item) => acc + item.amount * item.price, 0);
+  };
+
   return (
     <CartListWrapper>
       <div className="cart-title">
@@ -38,7 +47,13 @@ export const CartList: FC<Props> = ({ cartItem, addToCart }) => {
                     <span>{numberFormat(item.price)}원</span>
                   </div>
                   <div className="cart-btn">
-                    <Button>-</Button>
+                    <Button
+                      onClick={() => {
+                        removeFromCart(item.id);
+                      }}
+                    >
+                      -
+                    </Button>
                     <span>{item.amount}</span>
                     <Button
                       onClick={() => {
@@ -53,7 +68,7 @@ export const CartList: FC<Props> = ({ cartItem, addToCart }) => {
             </div>
           ))}
           <div className="total">
-            <span>Total</span>
+            <span>Total: {numberFormat(totalPrice(cartItem))}원</span>
           </div>
         </div>
       )}

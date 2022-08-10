@@ -49,4 +49,9 @@ export const HeaderWrapper = styled.header`
   .header-right .header-icon {
     margin-top: 6px;
   }
+
+  .total-count {
+    left: 1.5rem;
+    top: -0.1rem;
+  }
 `;
