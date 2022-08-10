@@ -21,3 +21,7 @@ input {
 .slick-slider {
   height: 90%;
 }
+
+.swal2-title {
+  font-size: 18px;
+}

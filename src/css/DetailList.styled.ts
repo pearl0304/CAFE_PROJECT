@@ -27,6 +27,7 @@ export const DetailListWrapper = styled.div`
   }
 
   .detail-right {
+    margin-top: 6.5rem;
     width: 480px;
     height: fit-content;
     display: flex;
