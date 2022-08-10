@@ -1,4 +1,3 @@
-import { Header } from "../Components/Header";
 import { News } from "../Components/News";
 import { SlideList } from "../Components/SlideList";
 import { StoryList } from "../Components/StoryList";
@@ -12,7 +11,6 @@ export const Home = () => {
   ];
   return (
     <div>
-      <Header nav={homeNav} />
       <News />
       <SlideList />
       <StoryList />

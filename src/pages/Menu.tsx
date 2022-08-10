@@ -1,4 +1,3 @@
-import { Header } from "../Components/Header";
 import { MenuList } from "../Components/MenuList";
 import { NavInterface } from "../interfaces/menu.interface";
 import { MenuListData } from "../database/menuListData";
@@ -12,7 +11,6 @@ export const Menu = () => {
   ];
   return (
     <>
-      <Header nav={menuNav} />
       <MenuList menuList={MenuListData} />
     </>
   );

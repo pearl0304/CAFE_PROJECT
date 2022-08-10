@@ -6,28 +6,30 @@ import Swal from "sweetalert2";
 
 type Props = {
   menu: MenuListInterface;
+  addToCart: (item: any) => void;
 };
 
 const numberFormat = (price: number): string => {
   return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 };
 
-const onClickButton = () => {
-  Swal.fire({
-    title: `장바구니에 추가하시겠습니까?`,
-    showDenyButton: true,
-    confirmButtonText: "ADD",
-    denyButtonText: "CANCLE",
-  }).then((result) => {
-    if (result.isConfirmed) {
-      Swal.fire("장바구니 추가 완료", "", "success");
-    } else {
-      Swal.fire("장바구니 추가 취소", "", "error");
-    }
-  });
-};
+export const DetailList: FC<Props> = ({ menu, addToCart }) => {
+  const onClickButton = (item: any) => {
+    Swal.fire({
+      title: `장바구니에 추가하시겠습니까?`,
+      showDenyButton: true,
+      confirmButtonText: "ADD",
+      denyButtonText: "CANCLE",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        addToCart(item);
+        Swal.fire("장바구니 추가 완료", "", "success");
+      } else {
+        Swal.fire("장바구니 추가 취소", "", "error");
+      }
+    });
+  };
 
-export const DetailList: FC<Props> = ({ menu }) => {
   return (
     <DetailListWrapper>
       <div className="detail-container">
@@ -51,7 +53,7 @@ export const DetailList: FC<Props> = ({ menu }) => {
             <Button
               variant="contained"
               onClick={() => {
-                onClickButton();
+                onClickButton(menu);
               }}
             >
               장바구니에 담기

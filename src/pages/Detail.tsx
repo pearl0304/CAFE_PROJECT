@@ -1,16 +1,20 @@
 import { useParams } from "react-router-dom";
-import { Header } from "../Components/Header";
 import { DetailList } from "../Components/DetailList";
 import { MenuListData } from "../database/menuListData";
+import { CartListInterface } from "../interfaces/menu.interface";
+import { FC } from "react";
 
-export const Detail = () => {
+type Props = {
+  addToCart: (item: CartListInterface) => void;
+};
+
+export const Detail: FC<Props> = ({ addToCart }) => {
   const { id } = useParams();
   const data = MenuListData.filter((item) => item.id === id);
 
   return (
     <>
-      <Header nav={[]} />
-      <DetailList menu={data[0]} />
+      <DetailList menu={data[0]} addToCart={addToCart} />
     </>
   );
 };
