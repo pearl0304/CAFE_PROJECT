@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const SlideListWrapper = styled.div`
   width: 100%;
-  height: 50rem;
   background-color: #f8eee1;
 
   .menu-container {
@@ -10,7 +9,6 @@ export const SlideListWrapper = styled.div`
     display: flex;
     justify-content: center;
     position: relative;
-    color: #31302f;
     padding-top: 5rem;
   }
   .menu-left {
@@ -44,11 +42,5 @@ export const SlideListWrapper = styled.div`
     bottom: 4rem;
     font-size: 5rem;
     font-weight: bold;
-  }
-
-  .letter {
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-    font-weight: bold;
-    letter-spacing: 0.2rem;
   }
 `;
