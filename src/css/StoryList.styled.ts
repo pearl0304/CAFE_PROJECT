@@ -7,7 +7,6 @@ export const StoryWrapper = styled.div`
 
   .story-container {
     width: 90%;
-    background-color: lightgray;
     margin-left: 50%;
     transform: translateX(-50%);
     padding-top: 5rem;
@@ -22,7 +21,6 @@ export const StoryWrapper = styled.div`
   }
 
   .story-left > div:first-child {
-    background-color: azure;
     font-size: 4rem;
   }
 
